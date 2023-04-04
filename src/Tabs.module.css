@@ -1,0 +1,49 @@
+.TabsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-inline: auto;
+  width: 50%;
+  background-color: rgba(113, 113, 113, 0.1);
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  margin-bottom: 3rem;
+}
+
+.TabsHeading {
+  margin-bottom: 4rem;
+}
+
+.TabsSwitch {
+  position: relative;
+}
+
+.TabsTab {
+  display: grid;
+  align-content: end;
+  position: absolute;
+  bottom: 0;
+  width: 24%;
+  height: 3rem;
+  cursor: pointer;
+  border-bottom: 0.2rem solid rgba(139, 139, 139, 0.151);
+  transform: translateX(calc(100% * var(--index) + 5.5% * var(--index)));
+}
+
+.TabsTab > h3 {
+  margin: 0;
+  height: 0;
+  overflow: hidden;
+  transition: height 200ms ease-in-out;
+}
+
+.TabsTab:hover,
+.TabsTab.active {
+  border-color: rgba(139, 139, 139, 0.651);
+  transition: border-color 200ms ease-in-out;
+}
+
+.TabsTab:hover > h3,
+.TabsTab.active > h3 {
+  height: 2rem;
+}

@@ -1,0 +1,33 @@
+.Form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.Form input {
+  padding: 1rem;
+}
+
+.Form input[type='submit'],
+.big {
+  grid-column: 1 / -1;
+}
+
+.Form input[type='submit'] {
+  border-radius: 0;
+}
+
+.Table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 1rem;
+  border: 0.2rem solid #1a1a1a;
+  border-radius: 1rem;
+}
+
+.Table thead {
+  background-color: #1a1a1a;
+}
+
+.Table tbody td {
+  border: 0.1rem solid #1a1a1a;
+}

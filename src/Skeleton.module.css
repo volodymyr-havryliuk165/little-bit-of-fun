@@ -1,0 +1,31 @@
+.line {
+  background-color: #3d3d3d80;
+  animation: pulsate 700ms ease-in infinite alternate;
+  margin-bottom: 1rem;
+}
+
+.tableRow,
+.tableHeader {
+  display: flex;
+}
+
+.tableCell {
+  background-color: #3d3d3d80;
+  border-right: 5px solid #1e1e1e34;
+  border-bottom: 5px solid #1e1e1e34;
+  animation: pulsate 700ms ease-in infinite alternate;
+  flex-grow: 1;
+}
+
+.tableHeader .tableCell {
+  background-color: #31313180;
+}
+
+@keyframes pulsate {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 30%;
+  }
+}
